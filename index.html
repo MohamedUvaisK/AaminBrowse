@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="hh.png" type="image/png">
+   <title>New Tab</title>
+</head>
+<body>
+   <div class="logo-and-wordmark">
+      <div class="logo"></div>
+      <div class="wordmark"></div>
+   </div>
+   <div class="search-inner-wrapper">
+      <input type="search" class="query" spellcheck="false" placeholder="Search with Google or enter address">
+   </div>
+   <section class="top-sites">
+      <ul class="top-sites-list">
+         <li class="top-site-outer">
+            <div class="top-site-inner">
+               <a href="https://www.youtube.com" title="Youtube">
+                  <div class="tile">
+                     <img src="youtube.png" class="icon">
+                  </div>
+                  <div class="title">
+                     <span>YouTube</span>
+                  </div>
+               </a>
+            </div>
+         </li>
+         <li class="top-site-outer">
+            <div class="top-site-inner">
+               <a href="https://www.facebook.com" title="facebook">
+                  <div class="tile">
+                     <img src="facebook.png" class="icon">
+                  </div>
+                  <div class="title">
+                     <span>facebook</span>
+                  </div>
+               </a>
+            </div>
+         </li>
+         <li class="top-site-outer">
+            <div class="top-site-inner">
+               <a href="https://www.amazon.in/" title="wikipedia">
+                  <div class="tile">
+                     <img src="amazon.png" class="icon">
+                  </div>
+                  <div class="title">
+                     <span>Amazon </span>
+                  </div>
+               </a>
+            </div>
+         </li>
+         <li class="top-site-outer">
+            <div class="top-site-inner">
+               <a href="https://vwr8oiqjd30jhfk6el8w8a-on.drv.tw/www.Personal%20Website.com/Main.html" title="AaminBrowse">
+                  <div class="tile">
+                     <img src="hh.png" class="icon">
+                  </div>
+                  <div class="title">
+                     <span>AaminBrowse</span>
+                  </div>
+               </a>
+            </div>
+         </li>
+         <li class="top-site-outer">
+            <div class="top-site-inner">
+               <a href="https://web.whatsapp.com" title="WhatsApp">
+                  <div class="tile">
+                     <img src="whatsapp.jpg" class="icon">
+                  </div>
+                  <div class="title">
+                     <span>WhatsApp </span>
+                  </div>
+               </a>
+            </div>
+         </li>
+      </ul>
+   </section>
+   <script>
+      const query = document.querySelector('.query')
+      function search(){
+         const url = "https://www.google.com/search?q="+query.value
+         window.open(url,"_self")
+      }
+      query.addEventListener('keydown',(e)=>{
+         if(e.keyCode === 13){
+            search();
+         }
+      })
+   </script>
+</body>
+</html>         
